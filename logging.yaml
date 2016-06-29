@@ -5,11 +5,11 @@ formatters:
         format: "%(name)-20s%(levelname)-8s%(message)s"
 handlers:
     file:
-      class: logging.handlers.ConcurrentRotatingFileHandler
+      class: logging.handlers.WatchedFileHandler
       level: DEBUG
       formatter: simple
       encoding: utf-8
-      args: ("test.log", "a", 524288, 10)
+      filename: test.log
 root:
     level: DEBUG
     handlers: [file]
