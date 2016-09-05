@@ -2,7 +2,7 @@ version: 1
 disable_existing_loggers: False
 formatters:
     simple:
-        format: "%(name)-20s%(levelname)-8s%(message)s"
+      format: '%(asctime)s %(levelname)s [%(process)d:%(processName)s] %(pathname)s %(module)s %(filename)s %(funcName)s %(lineno)d %(message)s'
 handlers:
     file:
       class: logging.handlers.WatchedFileHandler
