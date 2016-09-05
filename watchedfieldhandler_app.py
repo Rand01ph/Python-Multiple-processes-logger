@@ -19,6 +19,6 @@ if __name__ == '__main__':
 
     p = Pool(4)
 
-    p.map(test, range(100000))
+    p.map(test, range(10000))
 
     test('end')

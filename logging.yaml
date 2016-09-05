@@ -9,7 +9,7 @@ handlers:
       level: DEBUG
       formatter: simple
       encoding: utf-8
-      filename: test.log
+      filename: /var/log/pro/pro.log
 root:
     level: DEBUG
     handlers: [file]
