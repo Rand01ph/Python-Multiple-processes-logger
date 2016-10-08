@@ -3,3 +3,6 @@ test.log
 test.log.*
 *.pyc
 .ropeproject/
+access.log
+pro.log
+uwsgi.log
